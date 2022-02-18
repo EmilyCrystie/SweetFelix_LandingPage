@@ -1,0 +1,46 @@
+:root{
+    /* colors */
+    --background-color1: hsl(107, 36%, 95%);
+    --background-color2: hsl(0, 95%, 22%);
+    --title1: hsl(0, 95%, 22%);
+    --title2: hsl(0, 0%, 100%);
+    --content: hsl(0, 95%, 22%);
+    --background-button: hsl(0, 0%, 100%);
+    --content-button: hsl(0, 95%, 22%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.main {
+    background-image: url(assets/chocolate_heart_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+h2{
+    font-size: 5rem;
+    font-family: 'Oooh Baby', cursive;
+    color: var(--title1);
+    
+}
+
+p{
+    font-size: 1rem;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--content);
+    text-align: center;
+}
+
+button .img{
+    text-decoration: none;
+    border: 0rem;
+    display: block;
+    width: 100%;
+}
