@@ -13,21 +13,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 
-.main {
+body{
     background-image: url(assets/chocolate_heart_image.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+}
+
+.main {
     height: 100vh;
+    margin: 5rem 1.5rem;
 }
 
 h2{
-    font-size: 5rem;
+    font-size: 7rem;
     font-family: 'Oooh Baby', cursive;
     color: var(--title1);
+    width: auto;
+    align-items: center;
+}
+
+.firstName{
+    height: 6.25rem;
+}
+
+.secondName{
+    text-align: right;
+}
+
+footer{
     
 }
 
@@ -38,9 +54,8 @@ p{
     text-align: center;
 }
 
-button .img{
+button{
     text-decoration: none;
-    border: 0rem;
-    display: block;
-    width: 100%;
+    border: none;
+    margin-left: auto;
 }
