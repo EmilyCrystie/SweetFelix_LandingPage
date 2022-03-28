@@ -13,49 +13,156 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Oooh Baby', cursive;
+    color: var(--title1);
 }
 
 body{
-    background-image: url(assets/chocolate_heart_image.png);
+    /* background-image: url(assets/chocolate_heart_image.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
+    background-size: cover; */
+    background: hsl(107, 36%, 95%);
 }
 
-.main {
+section{
     height: 100vh;
-    margin: 5rem 1.5rem;
-}
-
-h2{
-    font-size: 7rem;
-    font-family: 'Oooh Baby', cursive;
-    color: var(--title1);
-    width: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.firstName{
-    height: 6.25rem;
+.page1, .page2{
+    width: 100vw;
+    height: 100%;
+    background: hsl(107, 36%, 95%);
+    border-radius: 5px;
+    transition: 0.8s;
 }
 
-.secondName{
-    text-align: right;
+.page1 .title h2{
+    font-size: 7rem;
+    padding-left: 1rem;
 }
 
-footer{
-    
+.page1 .title h2:last-child{
+    text-align: end;
+    padding-right: 2rem;
 }
 
-p{
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 18rem;
+}
+
+.content1 p{
+    padding: 5px;
     font-size: 1rem;
     font-family: 'DM Sans', sans-serif;
     color: var(--content);
-    text-align: center;
 }
 
-button{
-    text-decoration: none;
+.content1 .arrow-down{
+    width: 2rem;
+    height: 2rem;
+    color: rgba(0, 0, 0, 0.432);
+    border-radius: 5px;
+}
+
+.page2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2 .content2{
+    background: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px;
+}
+
+.page2 .content2 h2{
+    text-align: center;
+    background: #6B0303;
+    color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    width: 100%;
+    font-size: 22pt;
+}
+
+.page2 .content2 .cards{
+    margin-top: 0.5rem;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2 .content2 .card{
+    background: white;
+    width: 70%;
+    height: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 21px -2px rgba(0,0,0,0.8);
+    background-image: url(assets/ovo-brigadeiro.jpeg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.page2 .content2 .card .description{
+    width: 100%;
+}
+
+.page2 .content2 .card p{
+    padding: 6px;
+    text-align: center;
+    font-size: 14pt;
+    background: var(--background-color1);
+    opacity: 80%;
+    border-radius: 0px 0 5px 5px;
+}
+
+.page2 .content2 .button{
+    margin-top: 0.5rem;
+    background: #6B0303;
+    color: hsl(0, 0%, 100%);
+    padding: 1.5rem;
+    width: 100%;
+    font-size: 28pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2 .content2 button{
+    padding: 0.5rem;
+    width: 10rem;
+    border-radius: 10px;
     border: none;
-    margin-left: auto;
+    font-size: 11pt;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.page2 .content2 button a{
+    text-decoration: none;
+}
+
+.page2 .content2 button .logo-whatsapp{
+    color: green;
+    width: 15px;
+    height: 15px;
 }
