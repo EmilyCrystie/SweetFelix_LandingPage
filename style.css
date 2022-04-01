@@ -38,7 +38,7 @@ section{
     width: 100%;
     height: 100vh;
     background: hsl(107, 36%, 95%);
-    transition: 0.8s;
+    transition: 0.08s;
 }
 
 .page1{
@@ -107,6 +107,11 @@ section{
     font-size: 22pt;
 }
 
+.page2 .content2 h4{
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 5px;
+}
+
 .page2 .content2 .cards{
     width: 95%;
     height: 70%;
@@ -144,6 +149,13 @@ section{
     background: var(--background-color1);
     opacity: 80%;
     border-radius: 0px 0 5px 5px;
+}
+
+.page2 .content2 .arrow-down2{
+    width: 2rem;
+    height: 2rem;
+    color: rgba(0, 0, 0, 0.432);
+    border-radius: 5px;
 }
 
 .page2 .button{
