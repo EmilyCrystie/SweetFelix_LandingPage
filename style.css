@@ -19,10 +19,10 @@
 }
 
 body{
-    /* background-image: url(assets/chocolate_heart_image.png);
+    /* background-image: url(https://images.unsplash.com/photo-1582176604856-e824b4736522?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80);
     background-repeat: no-repeat;
-    background-size: cover; */
-    background: hsl(107, 36%, 95%);
+    background-size: cover;
+    background: hsl(107, 36%, 95%); */
 }
 
 section{
@@ -34,17 +34,16 @@ section{
     align-items: center;
 }
 
-.page1, .page2{
+.page1{
     width: 100%;
     height: 100vh;
-    background: hsl(107, 36%, 95%);
     transition: 0.08s;
-}
-
-.page1{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1582176604856-e824b4736522?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content{
@@ -75,10 +74,14 @@ section{
 }
 
 .content1 p{
+    width: 100vw;
+    text-align: center;
     padding: 5px;
     font-size: 1rem;
     font-family: 'DM Sans', sans-serif;
     color: var(--content);
+    background: var(--background-color1);
+    opacity: 80%;
 }
 
 .content1 .arrow-down{
@@ -88,8 +91,14 @@ section{
     border-radius: 5px;
 }
 
+.page2{
+    width: 100%;
+    height: 100vh;
+    background: hsl(107, 36%, 95%);
+    transition: 0.08s;
+}
+
 .page2 .content2{
-    background: hsl(0, 0%, 100%);
     width: 100%;
     height: 100%;
     display: flex;
@@ -118,6 +127,7 @@ section{
     display: flex;
     overflow: auto;
     align-items: center;
+    /* justify-content: center; */
 }
 
 .page2 .content2 .cards::-webkit-scrollbar{
@@ -129,13 +139,36 @@ section{
     min-width: 250px;
     height: 400px;
     border-radius: 5px;
-    /* box-shadow: 5px 5px 20px -1px rgba(0,0,0,0.45); */
-    background-image: url(assets/ovo-brigadeiro.jpeg);
+    box-shadow: 5px 5px 12px -8px #000000;
     background-size: cover;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     margin: 0 15px 2px 0;
+}
+
+.page2 .content2 .brigadeiro{
+    background-image: url(assets/ovo-brigadeiro.jpeg);
+}
+
+.page2 .content2 .sensacao{
+    background-image: url(https://i.pinimg.com/564x/57/c8/9f/57c89f57df5d2a11a6999aa1ef96ab80.jpg);
+}
+
+.page2 .content2 .nutelinho{
+    background-image: url(https://i.pinimg.com/564x/4c/e9/cd/4ce9cd9e74fadd128bad6dfa34f5e75f.jpg);
+}
+
+.page2 .content2 .cenoura{
+    background-image: url(https://cozinhadaloli.com.br/wp-content/uploads/2021/03/LOLI-8034-600x800.jpg);
+}
+
+.page2 .content2 .oreo{
+    background-image: url(https://euadororeceitas.com.br/wp-content/uploads/2021/02/Ovo-da-pascoa-de-colher-768x1024.jpg);
+}
+
+.page2 .content2 .kitkat{
+    background-image: url(assets/ovo-kitkat.jpg);
 }
 
 .page2 .content2 .card .description{
@@ -145,13 +178,14 @@ section{
 .page2 .content2 .card p{
     padding: 6px;
     text-align: center;
-    font-size: 14pt;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12pt;
     background: var(--background-color1);
     opacity: 80%;
     border-radius: 0px 0 5px 5px;
 }
 
-.page2 .content2 .arrow-down2{
+.page2 .content1 .arrow-down2{
     width: 2rem;
     height: 2rem;
     color: rgba(0, 0, 0, 0.432);
