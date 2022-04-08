@@ -1,28 +1,16 @@
-:root{
-    /* colors */
-    --background-color1: hsl(107, 36%, 95%);
-    --background-color2: hsl(0, 95%, 22%);
-    --title1: hsl(0, 95%, 22%);
-    --title2: hsl(0, 0%, 100%);
-    --content: hsl(0, 95%, 22%);
-    --background-button: hsl(0, 0%, 100%);
-    --content-button: hsl(0, 95%, 22%);
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: 'Oooh Baby', cursive;
-    color: var(--title1);
+    color: var(--principalColor);
 }
 
-body{
-    /* background-image: url(https://images.unsplash.com/photo-1582176604856-e824b4736522?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: hsl(107, 36%, 95%); */
+:root{
+    /* colors */
+    --principalColor: hsl(0, 95%, 22%);
+    --secondColor: hsl(107, 36%, 95%);
 }
 
 section{
@@ -46,7 +34,7 @@ section{
     background-size: cover;
 }
 
-.content{
+.cover{
     width: 90%;
     height: 90%;
     display: flex;
@@ -67,38 +55,38 @@ section{
     text-align: end;
 }
 
-.content1{
+.contentCover{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.content1 p{
+.contentCover p{
     width: 100vw;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--cover);
     text-align: center;
     padding: 5px;
-    font-size: 1rem;
-    font-family: 'DM Sans', sans-serif;
-    color: var(--content);
-    background: var(--background-color1);
+    background: var(--secondColor);
     opacity: 80%;
 }
 
-.content1 .arrow-down{
+.contentCover .arrow-down{
     width: 2rem;
     height: 2rem;
     color: rgba(0, 0, 0, 0.432);
     border-radius: 5px;
 }
 
-.page2{
+.pageProducts{
     width: 100%;
     height: 100vh;
-    background: hsl(107, 36%, 95%);
+    background: var(--secondColor);
     transition: 0.08s;
 }
 
-.page2 .content2{
+.pageProducts .contentProducts{
     width: 100%;
     height: 100%;
     display: flex;
@@ -107,119 +95,118 @@ section{
     justify-content: space-between;
 }
 
-.page2 .content2 h2{
-    text-align: center;
-    background: #6B0303;
-    color: hsl(0, 0%, 100%);
-    padding: 1.5rem;
+.pageProducts .contentProducts h2{
     width: 100%;
+    padding: 1.5rem;
     font-size: 22pt;
+    text-align: center;
+    background: var(--principalColor);
+    color: var(--secondColor);
 }
 
-.page2 .content2 h4{
+.pageProducts .contentProducts h4{
     font-family: 'DM Sans', sans-serif;
     margin-top: 5px;
 }
 
-.page2 .content2 .cards{
+.pageProducts .contentProducts .cards{
     width: 95%;
     height: 70%;
     display: flex;
-    overflow: auto;
     align-items: center;
-    /* justify-content: center; */
+    overflow: auto;
 }
 
-.page2 .content2 .cards::-webkit-scrollbar{
+.pageProducts .contentProducts .cards::-webkit-scrollbar{
     width: 0;
 }
 
-.page2 .content2 .card{
-    background: white;
+.pageProducts .contentProducts .card{
     min-width: 250px;
     height: 400px;
+    margin: 0 15px 2px 0;
+    background: white;
     border-radius: 5px;
     box-shadow: 5px 5px 12px -8px #000000;
     background-size: cover;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin: 0 15px 2px 0;
 }
 
-.page2 .content2 .brigadeiro{
+.pageProducts .contentProducts .brigadeiro{
     background-image: url(assets/ovo-brigadeiro.jpeg);
 }
 
-.page2 .content2 .sensacao{
+.pageProducts .contentProducts .sensacao{
     background-image: url(https://i.pinimg.com/564x/57/c8/9f/57c89f57df5d2a11a6999aa1ef96ab80.jpg);
 }
 
-.page2 .content2 .nutelinho{
+.pageProducts .contentProducts .nutelinho{
     background-image: url(https://i.pinimg.com/564x/4c/e9/cd/4ce9cd9e74fadd128bad6dfa34f5e75f.jpg);
 }
 
-.page2 .content2 .cenoura{
+.pageProducts .contentProducts .cenoura{
     background-image: url(https://cozinhadaloli.com.br/wp-content/uploads/2021/03/LOLI-8034-600x800.jpg);
 }
 
-.page2 .content2 .oreo{
+.pageProducts .contentProducts .oreo{
     background-image: url(https://euadororeceitas.com.br/wp-content/uploads/2021/02/Ovo-da-pascoa-de-colher-768x1024.jpg);
 }
 
-.page2 .content2 .kitkat{
+.pageProducts .contentProducts .kitkat{
     background-image: url(assets/ovo-kitkat.jpg);
 }
 
-.page2 .content2 .card .description{
+.pageProducts .contentProducts .card .description{
     width: 100%;
 }
 
-.page2 .content2 .card p{
+.pageProducts .contentProducts .card p{
     padding: 6px;
-    text-align: center;
     font-family: 'DM Sans', sans-serif;
     font-size: 12pt;
-    background: var(--background-color1);
+    text-align: center;
+    background: var(--secondColor);
     opacity: 80%;
     border-radius: 0px 0 5px 5px;
 }
 
-.page2 .content1 .arrow-down2{
+.pageProducts .arrow-down2{
     width: 2rem;
     height: 2rem;
     color: rgba(0, 0, 0, 0.432);
     border-radius: 5px;
 }
 
-.page2 .button{
-    background: #6B0303;
-    color: hsl(0, 0%, 100%);
-    padding: 1.5rem;
+.pageProducts .orderButton{
     width: 100%;
+    padding: 1.5rem;
     font-size: 28pt;
+    background: var(--principalColor);
+    color: var(--secondColor);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.page2 button{
-    padding: 0.5rem;
+.pageProducts button{
     width: 10rem;
-    border-radius: 10px;
-    border: none;
+    padding: 0.5rem;
     font-size: 14pt;
+    border: none;
+    border-radius: 10px;   
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.page2 button a{
+.pageProducts button a{
     text-decoration: none;
 }
 
-.page2 button .logo-whatsapp{
-    color: green;
+.pageProducts button .logo-whatsapp{
     width: 15px;
     height: 15px;
+    color: green;
 }
