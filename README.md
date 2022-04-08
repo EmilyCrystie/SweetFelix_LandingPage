@@ -5,6 +5,8 @@
  <p> ➡️ Acesse o projeto por <a href="https://sweetfelix.netlify.app" target="_blank"> aqui </a>⬅️</p>
 
  ![image](https://user-images.githubusercontent.com/81563039/162045618-c6c1c504-1961-49bf-a1ed-a33538535c0e.png)
+ ![image](https://user-images.githubusercontent.com/81563039/162456571-5b6f0a80-a9f1-4f54-8b56-004576695bae.png)
+
 </div>
 <br>
  
