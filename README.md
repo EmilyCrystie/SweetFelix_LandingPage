@@ -13,18 +13,23 @@
   <img src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML5" width="15" height="15"/>
  </h3>
   <ol>
-   <li>  </li>
-   <li>  </li>
-   <li>  </li>
+   <li> Tags semânticas </li>
+   <li> Id's e seções </li>
+   <li> Botão com redirecionamento </li>
+   <li> Api's de fonte, ícone e aplicativo de chat </li>
   </ol>
   
  <h3> CSS 
   <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" width="15" height="15"/>
  </h3>
   <ol>
-   <li>  </li>
-   <li>  </li>
-   <li>  </li>
+   <li> Reset de formatação </li>
+   <li> Flexbox </li>
+   <li> Variáveis para alteração de cores </li>
+   <li> Alteração de tamanhos </li>
+   <li> Uso de imagens, de fundo ou não </li>
+   <li> Pseudo-classes </li>
+   <li> Pseuso-elementos </li>
   </ol>
 <br>
  
